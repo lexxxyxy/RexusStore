@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Rexus Shop</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="icon"
+      href="https://static.jakmall.id/2023/01/images/stores/11e7f1c1b843c04c8cdf002590f3b526/profile/1673429578/original/rexus-official-store.jpg"
+      type="image/x-icon"
+    />
+  </head>
+  <body>
+    <div id="modal" class="modal">
+      <div class="modal-content">
+        <span class="close-button">&times;</span>
+        <h1 id="modal-title"></h1>
+        <img id="modal-image" src="" alt="Product Image" />
+        <h3 id="modal-price"></h3>
+        <p id="modal-description"></p>
+        <button class="buy-button">Checkout</button>
+      </div>
+    </div>
+
+    <div class="navigation-containers">
+      <nav>
+        <a href="#">Home</a>
+        <a href="#">Products</a>
+        <a href="#">About Us</a>
+      </nav>
+    </div>
+    <div class="main-containers">
+      <div class="main-containers__header">
+        <h1>Rexus - Gaming Marketplace</h1>
+      </div>
+      <div class="containers-shop">
+        <div class="barang">
+          <h1>Rexus Keyboard</h1>
+          <img
+            src="https://images.tokopedia.net/img/cache/700/hDjmkQ/2023/7/31/feb861ff-f70b-454d-829d-ed56fbcf1267.jpg"
+            alt="Rexus Keyboard Gaming Battlefire K98M"
+          />
+          <h3>Rp 198.000</h3>
+          <p>Rexus Keyboard Gaming Battlefire K98M - Dark Grey</p>
+        </div>
+        <div class="barang">
+          <h1>Mouse Rexus</h1>
+          <img
+            src="https://rexus.id/cdn/shop/files/X15_1.png?v=1714121658"
+            alt="Mouse Rexus RGB"
+          />
+          <h3>Rp 350.000</h3>
+          <p>Mouse Rexus RGB</p>
+        </div>
+        <div class="barang">
+          <h1>Mousepad Rexus</h1>
+          <img
+            src="https://rexus.id/cdn/shop/files/Daxa_Retro_Mousemat_1_fdc32245-e7be-4cc5-89fe-7ecba5f1baaf.png?v=1704778113&width=720"
+            alt="Rexus Mousepad Gaming Daxa Retro"
+          />
+          <h3>Rp 350.000</h3>
+          <p>Rexus Mousepad Gaming Daxa Retro Mousemat Extended Cloth XL</p>
+        </div>
+        <div class="barang">
+          <h1>Headset Rexus</h1>
+          <img
+            src="https://images.tokopedia.net/img/cache/700/VqbcmM/2022/5/27/9e62bcd1-20f0-4c54-a62a-eb170c0477a1.jpg"
+            alt="Rexus Headset Gaming Vonix F30"
+          />
+          <h3>Rp 200.000</h3>
+          <p>Rexus Headset Gaming Vonix F30</p>
+        </div>
+        <div class="barang">
+          <h1>Rexus Earphone Gaming EZ5</h1>
+          <img
+            src="https://rexus.id/cdn/shop/files/EZ5_1_12ebda35-faec-48d5-a7e7-8ac40bf41823.png?v=1705127488"
+            alt="Rexus Earphone Gaming EZ5"
+          />
+          <h3>Rp 200.000</h3>
+          <p>Rexus Earphone Gaming EZ5</p>
+        </div>
+        <div class="barang">
+          <h1>Rexus Earphone Gaming EZ5</h1>
+          <img
+            src="https://rexus.id/cdn/shop/files/GX100_2_ca1933d6-29bf-4b46-9a68-f0d29841219b.png?v=1705292677&width=1200"
+            alt="Rexus Pro Gaming Wireless Gamepad GX100"
+          />
+          <h3>Rp 250.000</h3>
+          <p>Rexus Pro Gaming Wireless Gamepad GX100</p>
+        </div>
+        <div class="barang">
+          <h1>GAMING CHAIR REXUS RGC100/ RGC-100 MAX</h1>
+          <img
+            src="https://down-id.img.susercontent.com/file/b8e1129baaec2fa11ce7cd107824818d"
+            alt="Rexus Pro Gaming Wireless Gamepad GX100"
+          />
+          <h3>Rp 2.000.000</h3>
+          <p>GAMING CHAIR REXUS RGC100/ RGC-100 MAX</p>
+        </div>
+        <div class="barang">
+          <h1>TWS Rexus FX-3</h1>
+          <img
+            src="https://tokotekno.com/cdn/shop/files/5874b7e0-eb4b-4e03-977f-461b7530f214.jpg?v=1730557205&width=900"
+            alt="Rexus Pro Gaming Wireless Gamepad GX100"
+          />
+          <h3>Rp 200.000</h3>
+          <p>TWS Rexus FX-3</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="best-selller">
+      <h1>Best Seller</h1>
+      <button class="scroll-button left" onclick="scrollleft()">&#60;</button>
+      <div class="containers">
+        <div class="horizontal-scrolls" id="scrollContainer">
+          <div class="best">
+            <img
+              src="https://images.tokopedia.net/img/cache/700/VqbcmM/2022/5/27/9e62bcd1-20f0-4c54-a62a-eb170c0477a1.jpg"
+              alt="Rexus Headset Gaming Vonix F30"
+            />
+            <figcaption>Rexus Headset Gaming Vonix F30</figcaption>
+          </div>
+          <div class="best">
+            <img
+              src="https://rexus.id/cdn/shop/files/Daxa_Retro_Mousemat_1_fdc32245-e7be-4cc5-89fe-7ecba5f1baaf.png?v=1704778113&width=720"
+              alt="Rexus Mousepad Gaming Daxa Retro"
+            />
+            <figcaption>Rexus Mousepad Gaming Daxa Retro</figcaption>
+          </div>
+          <div class="best">
+            <img
+              src="https://rexus.id/cdn/shop/files/X15_1.png?v=1714121658"
+              alt="Mouse Rexus RGB"
+            />
+            <figcaption>Mouse Rexus RGB</figcaption>
+          </div>
+          <div class="best">
+            <img
+              src="https://images.tokopedia.net/img/cache/700/hDjmkQ/2023/7/31/feb861ff-f70b-454d-829d-ed56fbcf1267.jpg"
+              alt="Rexus Keyboard Gaming Battlefire K98M"
+            />
+            <figcaption>Rexus Keyboard Gaming Battlefire K98M</figcaption>
+          </div>
+          <div class="best">
+            <img
+              src="https://rexus.id/cdn/shop/files/EZ5_1_12ebda35-faec-48d5-a7e7-8ac40bf41823.png?v=1705127488"
+              alt="Rexus Earphone Gaming EZ5"
+            />
+            <figcaption>Rexus Earphone Gaming EZ5</figcaption>
+          </div>
+          <div class="best">
+            <img
+              src="https://rexus.id/cdn/shop/files/GX100_2_ca1933d6-29bf-4b46-9a68-f0d29841219b.png?v=1705292677&width=1200"
+              alt="Rexus Pro Gaming Wireless Gamepad GX100"
+            />
+            <figcaption>Rexus Pro Gaming Wireless Gamepad GX100</figcaption>
+          </div>
+          <div class="best">
+            <img
+              src="https://down-id.img.susercontent.com/file/b8e1129baaec2fa11ce7cd107824818d"
+              alt="Rexus Headset Gaming Vonix F30"
+            />
+            <figcaption>Rexus Headset Gaming Vonix F30</figcaption>
+          </div>
+        </div>
+      </div>
+      <button class="scroll-button right" onclick="scrollRight()">&#62;</button>
+    </div>
+    <div class="mains-containers">
+      <div class="containers-shops">
+        <div class="barang-lagi">
+          <h1>Rexus Keyboard</h1>
+          <img
+            src="https://images.tokopedia.net/img/cache/700/hDjmkQ/2023/7/31/feb861ff-f70b-454d-829d-ed56fbcf1267.jpg"
+            alt="Rexus Keyboard Gaming Battlefire K98M"
+          />
+          <h3>Rp 198.000</h3>
+          <p>Rexus Keyboard Gaming Battlefire K98M - Dark Grey</p>
+        </div>
+        <div class="barang-lagi">
+          <h1>Mouse Rexus</h1>
+          <img
+            src="https://rexus.id/cdn/shop/files/X15_1.png?v=1714121658"
+            alt="Mouse Rexus RGB"
+          />
+          <h3>Rp 350.000</h3>
+          <p>Mouse Rexus RGB</p>
+        </div>
+        <div class="barang-lagi">
+          <h1>Mousepad Rexus</h1>
+          <img
+            src="https://rexus.id/cdn/shop/files/Daxa_Retro_Mousemat_1_fdc32245-e7be-4cc5-89fe-7ecba5f1baaf.png?v=1704778113&width=720"
+            alt="Rexus Mousepad Gaming Daxa Retro"
+          />
+          <h3>Rp 350.000</h3>
+          <p>Rexus Mousepad Gaming Daxa Retro Mousemat Extended Cloth XL</p>
+        </div>
+        <div class="barang-lagi">
+          <h1>Headset Rexus</h1>
+          <img
+            src="https://images.tokopedia.net/img/cache/700/VqbcmM/2022/5/27/9e62bcd1-20f0-4c54-a62a-eb170c0477a1.jpg"
+            alt="Rexus Headset Gaming Vonix F30"
+          />
+          <h3>Rp 200.000</h3>
+          <p>Rexus Headset Gaming Vonix F30</p>
+        </div>
+        <div class="barang-lagi">
+          <h1>Rexus Earphone Gaming EZ5</h1>
+          <img
+            src="https://rexus.id/cdn/shop/files/EZ5_1_12ebda35-faec-48d5-a7e7-8ac40bf41823.png?v=1705127488"
+            alt="Rexus Earphone Gaming EZ5"
+          />
+          <h3>Rp 200.000</h3>
+          <p>Rexus Earphone Gaming EZ5</p>
+        </div>
+      </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="script.js"></script>
+  </body>
+</html>
