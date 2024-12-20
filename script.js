@@ -99,3 +99,4 @@ document.querySelector(".buy-button").addEventListener("click", () => {
   document.getElementById("modal").style.display = "none";
 });
 
+document.getElementById("year").textContent = new Date().getFullYear();
