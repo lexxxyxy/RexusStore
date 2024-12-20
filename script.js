@@ -84,7 +84,7 @@ window.addEventListener("click", (event) => {
 
 document.querySelector(".buy-button").addEventListener("click", () => {
   Swal.fire({
-    title: "🎉 Berhasil Dibeli Njinkkk!",
+    title: "🎉Bos Muda udah beli product Kita",
     text: "Terima kasih Boss Dah beli produk kita",
     icon: "success",
     confirmButtonText: "Lanjutkan Belanja",
