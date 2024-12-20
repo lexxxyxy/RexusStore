@@ -310,14 +310,13 @@ figcaption {
     transform: translateY(0);
 }
 
-.barang:hover {
-    transform: scale(1.05) translateY(0); /* Scale dengan transformasi hover */
-}
-
-
+.barang:hover,
 .barang-lagi:hover {
-    transform: scale(1.05) translateY(0); /* Scale dengan transformasi hover */
+    transform: scale(1.0) translateY(-5px); /* Membuat produk terangkat sedikit */
+    box-shadow: 0 8px 20px rgba(255, 255, 255, 0.2); /* Bayangan lembut */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
+
 
 .modal {
     display: none;
@@ -360,4 +359,45 @@ figcaption {
     cursor: pointer;
     border-radius: 5px;
   }
+
+  nav a:hover {
+    color: #ffcc00;
+    text-decoration: underline;
+    transition: color 0.3s ease, text-decoration 0.3s ease;
+}
+
+.scroll-button {
+    background-color: rgba(255, 204, 0, 0.9); /* Warna emas transparan */
+    border: none;
+    border-radius: 50%;
+    cursor: pointer;
+    padding: 12px;
+    z-index: 1;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.scroll-button:hover {
+    background-color: rgba(255, 204, 0, 1);
+    transform: scale(1.1);
+}
+.barang .spec {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    opacity: 0;
+    background: rgba(0, 0, 0, 0.7);
+    color: white;
+    padding: 10px;
+    border-radius: 8px;
+    text-align: center;
+    transition: opacity 0.6s ease;
+  }
+  .barang:hover img {
+    transform: rotateY(180deg);
+    opacity: 0.3;
+  }
   
+  .barang:hover .spec {
+    opacity: 1;
+  }

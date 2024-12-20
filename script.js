@@ -29,7 +29,7 @@ document.addEventListener("DOMContentLoaded", function () {
         }
       });
     },
-    { threshold: 0.2 } // 10% dari elemen terlihat
+    { threshold: 0.2 } 
   );
 
   products.forEach((barang) => {
@@ -49,7 +49,7 @@ document.addEventListener("DOMContentLoaded", function () {
         }
       });
     },
-    { threshold: 0.2 } // 10% dari elemen terlihat
+    { threshold: 0.2 } 
   );
 
   products.forEach((barang) => {
@@ -84,8 +84,8 @@ window.addEventListener("click", (event) => {
 
 document.querySelector(".buy-button").addEventListener("click", () => {
   Swal.fire({
-    title: "🎉 Berhasil Dibeli!",
-    text: "Terima kasih telah membeli produk kami.",
+    title: "🎉 Berhasil Dibeli Njinkkk!",
+    text: "Terima kasih Boss Dah beli produk kita",
     icon: "success",
     confirmButtonText: "Lanjutkan Belanja",
     background: "#1e1e2d",
@@ -98,3 +98,4 @@ document.querySelector(".buy-button").addEventListener("click", () => {
 
   document.getElementById("modal").style.display = "none";
 });
+
