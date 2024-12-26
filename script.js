@@ -29,7 +29,7 @@ document.addEventListener("DOMContentLoaded", function () {
         }
       });
     },
-    { threshold: 0.2 } 
+    { threshold: 0.4 } 
   );
 
   products.forEach((barang) => {
@@ -49,7 +49,7 @@ document.addEventListener("DOMContentLoaded", function () {
         }
       });
     },
-    { threshold: 0.2 } 
+    { threshold: 0.4 } 
   );
 
   products.forEach((barang) => {
@@ -99,4 +99,3 @@ document.querySelector(".buy-button").addEventListener("click", () => {
   document.getElementById("modal").style.display = "none";
 });
 
-document.getElementById("year").textContent = new Date().getFullYear();
