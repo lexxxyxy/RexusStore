@@ -492,6 +492,10 @@ body {
   h1, h3, p {
     font-size: 1rem;
   }
+  
+  .barang-lagi img {
+    max-width: 200px;
+  }
 }
 
 @media (max-width: 576px) {
@@ -511,6 +515,12 @@ body {
   .barang {
     margin: 10px;
   }
+  .barang-lagi {
+    margin: 10px;
+  }
+  .barang-lagi img {
+    max-width: 150px;
+  }
 }
 
 @media (max-width: 320px) {
@@ -523,6 +533,13 @@ body {
   }
 
   .barang {
+    margin: 5px;
+  }
+  .barang-lagi img {
+    max-width: 120px;
+  }
+
+  .barang-lagi {
     margin: 5px;
   }
 }
