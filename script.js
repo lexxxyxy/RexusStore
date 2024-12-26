@@ -15,47 +15,71 @@ function scrollleft() {
     behavior: "smooth",
   });
 }
+window.addEventListener("scroll", () => {
+  const items = document.querySelectorAll(".barang");
+  items.forEach((item) => {
+    const rect = item.getBoundingClientRect();
+    if (rect.top < window.innerHeight && !item.classList.contains("animate")) {
+      item.classList.add("animate");
+    }
+  });
+});
 
-document.addEventListener("DOMContentLoaded", function () {
-  const products = document.querySelectorAll(".barang");
+document.addEventListener("DOMContentLoaded", () => {
+  const items = document.querySelectorAll(".barang");
 
   const observer = new IntersectionObserver(
     (entries, observer) => {
       entries.forEach((entry) => {
         if (entry.isIntersecting) {
-          entry.target.classList.add("show");
-        } else {
-          entry.target.classList.remove("show");
+          entry.target.classList.add("animate");
+          observer.unobserve(entry.target); 
         }
       });
     },
-    { threshold: 0.4 } 
+    { threshold: 0.1 } 
   );
 
-  products.forEach((barang) => {
-    observer.observe(barang);
-  });
+  items.forEach((item) => observer.observe(item));
 });
-document.addEventListener("DOMContentLoaded", function () {
-  const products = document.querySelectorAll(".barang-lagi");
+document.addEventListener("DOMContentLoaded", () => {
+  const items = document.querySelectorAll(".barang-lagi");
 
   const observer = new IntersectionObserver(
     (entries, observer) => {
       entries.forEach((entry) => {
         if (entry.isIntersecting) {
-          entry.target.classList.add("show");
-        } else {
-          entry.target.classList.remove("show");
+          entry.target.classList.add("animate");
+          observer.unobserve(entry.target); 
         }
       });
     },
-    { threshold: 0.4 } 
+    { threshold: 0.1 } 
   );
 
-  products.forEach((barang) => {
-    observer.observe(barang);
-  });
+  items.forEach((item) => observer.observe(item));
 });
+
+let isScrolling = false;
+
+window.addEventListener("scroll", () => {
+  if (!isScrolling) {
+    isScrolling = true;
+
+    setTimeout(() => {
+      const items = document.querySelectorAll(".barang");
+      items.forEach((item) => {
+        const rect = item.getBoundingClientRect();
+        if (rect.top < window.innerHeight && !item.classList.contains("animate")) {
+          item.classList.add("animate");
+        }
+      });
+
+      isScrolling = false;
+    }, 200); 
+  }
+});
+
 
 document.querySelectorAll(".barang, .barang-lagi").forEach((item) => {
   item.addEventListener("click", () => {

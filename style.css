@@ -301,25 +301,24 @@ figcaption {
 }
 
 .barang {
-  opacity: 0;
   transform: translateY(20px);
-  transition: opacity 0.5s ease, transform 0.5s ease;
+  opacity: 0;
+  transition: transform 0.5s ease, opacity 0.5s ease;
 }
 
-.barang.show {
-  opacity: 1;
+.barang.animate {
   transform: translateY(0);
+  opacity: 1;
 }
-
 .barang-lagi {
-  opacity: 0;
   transform: translateY(20px);
-  transition: opacity 0.5s ease, transform 0.5s ease;
+  opacity: 0;
+  transition: transform 0.5s ease, opacity 0.5s ease;
 }
 
-.barang-lagi.show {
-  opacity: 1;
+.barang-lagi.animate {
   transform: translateY(0);
+  opacity: 1;
 }
 
 .barang:hover,
@@ -449,3 +448,81 @@ nav a:hover {
   font-size: 14px;
 }
 
+/* untuk Desktop jangan diotak atik */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+.barang {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 20px;
+}
+
+.barang img {
+  max-width: 300px;
+  height: auto;
+}
+.barang-lagi {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 20px;
+}
+
+.barang-lagi img {
+  max-width: 300px;
+  height: auto;
+}
+
+@media (max-width: 768px) {
+  .containers-shop {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+  }
+
+  .barang img {
+    max-width: 200px;
+  }
+
+  h1, h3, p {
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 576px) {
+  .containers-shop {
+    grid-template-columns: 1fr; 
+  }
+
+  .barang img {
+    max-width: 150px;
+  }
+
+  h1, h3, p {
+    font-size: 0.9rem;
+    text-align: center;
+  }
+
+  .barang {
+    margin: 10px;
+  }
+}
+
+@media (max-width: 320px) {
+  h1, h3, p {
+    font-size: 0.8rem;
+  }
+
+  .barang img {
+    max-width: 120px;
+  }
+
+  .barang {
+    margin: 5px;
+  }
+}
